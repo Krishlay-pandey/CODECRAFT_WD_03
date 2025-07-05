@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe Enhanced</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="score-card">
+        <div class="score-item">
+            <span id="score-x" class="score-num">0</span>
+            <span class="score-label">X</span>
+        </div>
+        <div class="score-item">
+            <span id="score-o" class="score-num">0</span>
+            <span class="score-label">O</span>
+        </div>
+        <div class="score-item">
+            <span id="score-draw" class="score-num">0</span>
+            <span class="score-label">Draw</span>
+        </div>
+    </div>
+    <div class="mode-status-row">
+      <div class="mode-select" aria-label="Game Mode">
+        <label>
+          <input type="radio" name="mode" value="pvp" checked>
+          <span>Player vs Player</span>
+        </label>
+        <label>
+          <input type="radio" name="mode" value="ai">
+          <span>Play vs AI</span>
+        </label>
+      </div>
+      <div id="status" class="status-badge" aria-live="polite">Player X's turn</div>
+    </div>
+    <div class="board" id="board" aria-label="Tic Tac Toe Game Board" role="grid"></div>
+    <button id="reset" class="reset-btn" aria-label="Reset Game">🔄 Reset Game</button>
+  </div>
+  <footer>
+    <p>Made with ❤️ for a better Tic-Tac-Toe experience</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
